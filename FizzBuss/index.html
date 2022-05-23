@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style> 
+        html, body {
+            margin:0px;
+            height:100%;
+        }
+        .clicked {
+            font-weight: normal;
+            font-size: 18pt;
+        }
+        li {
+            font-size: 14pt;
+            cursor: pointer;
+        }
+        #lst{
+            margin: auto;
+        }
+        .container {
+            height: 100%;
+            position: relative;
+            display: flex;   
+            justify-content: center;
+            align-items: center;         
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul id="lst">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('li').click(function(){
+            $('li').removeClass('clicked');
+            $(this).addClass('clicked');
+        })
+    })
+</script>
+</html>
